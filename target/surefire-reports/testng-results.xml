@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-15T16:58:58 EDT" name="HttpBin API Suite" finished-at="2025-10-15T17:00:12 EDT" duration-ms="73640">
+    <groups>
+    </groups>
+    <test started-at="2025-10-15T16:58:58 EDT" name="API Tests" finished-at="2025-10-15T17:00:12 EDT" duration-ms="73640">
+      <class name="com.solvd.demo.HttpBinDeclarativeTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.solvd.demo.HttpBinDeclarativeTests@a4ca3f6]" started-at="2025-10-15T16:59:35 EDT" name="setup" finished-at="2025-10-15T16:59:35 EDT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testDelay()[pri:0, instance:com.solvd.demo.HttpBinDeclarativeTests@a4ca3f6]" started-at="2025-10-15T16:59:35 EDT" name="testDelay" finished-at="2025-10-15T16:59:43 EDT" duration-ms="7269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelay -->
+        <test-method signature="testHeaders()[pri:0, instance:com.solvd.demo.HttpBinDeclarativeTests@a4ca3f6]" started-at="2025-10-15T16:59:43 EDT" name="testHeaders" finished-at="2025-10-15T17:00:00 EDT" duration-ms="16966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHeaders -->
+        <test-method signature="testIP()[pri:0, instance:com.solvd.demo.HttpBinDeclarativeTests@a4ca3f6]" started-at="2025-10-15T17:00:00 EDT" name="testIP" finished-at="2025-10-15T17:00:01 EDT" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIP -->
+        <test-method signature="testUUID()[pri:0, instance:com.solvd.demo.HttpBinDeclarativeTests@a4ca3f6]" started-at="2025-10-15T17:00:01 EDT" name="testUUID" finished-at="2025-10-15T17:00:02 EDT" duration-ms="1228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUUID -->
+        <test-method signature="testUserAgent()[pri:0, instance:com.solvd.demo.HttpBinDeclarativeTests@a4ca3f6]" started-at="2025-10-15T17:00:02 EDT" name="testUserAgent" finished-at="2025-10-15T17:00:12 EDT" duration-ms="10266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserAgent -->
+      </class> <!-- com.solvd.demo.HttpBinDeclarativeTests -->
+      <class name="com.solvd.demo.HttpBinImperativeTests">
+        <test-method signature="testGetIP()[pri:0, instance:com.solvd.demo.HttpBinImperativeTests@1c3146bc]" started-at="2025-10-15T16:58:58 EDT" name="testGetIP" finished-at="2025-10-15T16:59:08 EDT" duration-ms="9865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetIP -->
+        <test-method signature="testGetRequest()[pri:0, instance:com.solvd.demo.HttpBinImperativeTests@1c3146bc]" started-at="2025-10-15T16:59:08 EDT" name="testGetRequest" finished-at="2025-10-15T16:59:09 EDT" duration-ms="1103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetRequest -->
+        <test-method signature="testGetUUID()[pri:0, instance:com.solvd.demo.HttpBinImperativeTests@1c3146bc]" started-at="2025-10-15T16:59:09 EDT" name="testGetUUID" finished-at="2025-10-15T16:59:11 EDT" duration-ms="1995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUUID -->
+        <test-method signature="testGetUserAgent()[pri:0, instance:com.solvd.demo.HttpBinImperativeTests@1c3146bc]" started-at="2025-10-15T16:59:11 EDT" name="testGetUserAgent" finished-at="2025-10-15T16:59:14 EDT" duration-ms="2505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserAgent -->
+        <test-method signature="testStatus404()[pri:0, instance:com.solvd.demo.HttpBinImperativeTests@1c3146bc]" started-at="2025-10-15T16:59:14 EDT" name="testStatus404" finished-at="2025-10-15T16:59:35 EDT" duration-ms="21578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStatus404 -->
+      </class> <!-- com.solvd.demo.HttpBinImperativeTests -->
+    </test> <!-- API Tests -->
+  </suite> <!-- HttpBin API Suite -->
+</testng-results>
