@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,75 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">10 methods, 7 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.solvd.demo.ui.tests.UITest" class="method navigator-link" hash-for-method="testAvatarVisibilityAfterHideMenu">testAvatarVisibilityAfterHideMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.solvd.demo.ui.tests.UITest" class="method navigator-link" hash-for-method="testAvatarVisibilityBeforeHideMenu">testAvatarVisibilityBeforeHideMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.solvd.demo.ui.tests.UITest" class="method navigator-link" hash-for-method="testFormButtonDisabledThenEnabled">testFormButtonDisabledThenEnabled</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.solvd.demo.ui.tests.UITest" class="method navigator-link" hash-for-method="testGemMenuActiveAfterClicking">testGemMenuActiveAfterClicking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.solvd.demo.ui.tests.UITest" class="method navigator-link" hash-for-method="testGemMenuActiveBeforeClicking">testGemMenuActiveBeforeClicking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.solvd.demo.ui.tests.UITest" class="method navigator-link" hash-for-method="testScrollButtonBecomesVisible">testScrollButtonBecomesVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.solvd.demo.ui.tests.UITest" class="method navigator-link" hash-for-method="testScrollButtonScrollsUp">testScrollButtonScrollsUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.solvd.demo.ui.tests.UITest" class="method navigator-link" hash-for-method="sanity">sanity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.solvd.demo.ui.tests.UITest" class="method navigator-link" hash-for-method="testHomePageLoading">testHomePageLoading</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.solvd.demo.ui.tests.UITest" class="method navigator-link" hash-for-method="testKnowMoreButtonClickNavigatesToInner">testKnowMoreButtonClickNavigatesToInner</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -104,6 +172,171 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.solvd.demo.ui.tests.UITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAvatarVisibilityAfterHideMenu">
+                  </a> <!-- testAvatarVisibilityAfterHideMenu -->
+                  <span class="method-name">testAvatarVisibilityAfterHideMenu</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element By.xpath: //button[class=&apos;hide-btn&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: driver.version: unknown
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1407)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:708)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:688)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:670)
+	at com.solvd.demo.ui.pages.ElementsPage.clickHideMenu(ElementsPage.java:70)
+	at com.solvd.demo.ui.tests.UITest.testAvatarVisibilityAfterHideMenu(UITest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAvatarVisibilityBeforeHideMenu">
+                  </a> <!-- testAvatarVisibilityBeforeHideMenu -->
+                  <span class="method-name">testAvatarVisibilityBeforeHideMenu</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: driver.version: unknown
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.isDisplayed(ExtendedWebElement.java:640)
+	at com.solvd.demo.ui.pages.ElementsPage.isAvatarVisible(ElementsPage.java:74)
+	at com.solvd.demo.ui.tests.UITest.testAvatarVisibilityBeforeHideMenu(UITest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFormButtonDisabledThenEnabled">
+                  </a> <!-- testFormButtonDisabledThenEnabled -->
+                  <span class="method-name">testFormButtonDisabledThenEnabled</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element By.xpath: //button[class=&apos;form-btn&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: driver.version: unknown
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getAttribute(ExtendedWebElement.java:609)
+	at com.solvd.demo.ui.pages.ElementsPage.isFormButtonDisabled(ElementsPage.java:87)
+	at com.solvd.demo.ui.tests.UITest.testFormButtonDisabledThenEnabled(UITest.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGemMenuActiveAfterClicking">
+                  </a> <!-- testGemMenuActiveAfterClicking -->
+                  <span class="method-name">testGemMenuActiveAfterClicking</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element By.xpath: //li[data-icon=&apos;gem&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: driver.version: unknown
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1407)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:708)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:688)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:670)
+	at com.solvd.demo.ui.pages.ElementsPage.clickGemMenu(ElementsPage.java:53)
+	at com.solvd.demo.ui.tests.UITest.testGemMenuActiveAfterClicking(UITest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGemMenuActiveBeforeClicking">
+                  </a> <!-- testGemMenuActiveBeforeClicking -->
+                  <span class="method-name">testGemMenuActiveBeforeClicking</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element By.xpath: //li[data-icon=&apos;gem&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: driver.version: unknown
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
+	at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getAttribute(ExtendedWebElement.java:609)
+	at com.solvd.demo.ui.pages.ElementsPage.getGemMenuClass(ElementsPage.java:48)
+	at com.solvd.demo.ui.tests.UITest.testGemMenuActiveBeforeClicking(UITest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScrollButtonBecomesVisible">
+                  </a> <!-- testScrollButtonBecomesVisible -->
+                  <span class="method-name">testScrollButtonBecomesVisible</span>
+                  <div class="stack-trace">java.lang.AssertionError: Scroll button should be visible after scrolling down! expected [true] but found [false]
+	at com.solvd.demo.ui.tests.UITest.testScrollButtonBecomesVisible(UITest.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScrollButtonScrollsUp">
+                  </a> <!-- testScrollButtonScrollsUp -->
+                  <span class="method-name">testScrollButtonScrollsUp</span>
+                  <div class="stack-trace">java.lang.AssertionError: Scroll button should be visible before clicking! expected [true] but found [false]
+	at com.solvd.demo.ui.tests.UITest.testScrollButtonScrollsUp(UITest.java:113)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.solvd.demo.ui.tests.UITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sanity">
+                  </a> <!-- sanity -->
+                  <span class="method-name">sanity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testHomePageLoading">
+                  </a> <!-- testHomePageLoading -->
+                  <span class="method-name">testHomePageLoading</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testKnowMoreButtonClickNavigatesToInner">
+                  </a> <!-- testKnowMoreButtonClickNavigatesToInner -->
+                  <span class="method-name">testKnowMoreButtonClickNavigatesToInner</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -112,8 +345,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; data-provider-thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.solvd.demo.ui.tests.UITest&quot;/&gt;
     &lt;/classes&gt;
@@ -155,12 +388,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testAvatarVisibilityAfterHideMenu')
+data.setCell(0, 2, 'com.solvd.demo.ui.tests.UITest')
+data.setCell(0, 3, 22273);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testScrollButtonScrollsUp')
+data.setCell(1, 2, 'com.solvd.demo.ui.tests.UITest')
+data.setCell(1, 3, 21214);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testScrollButtonBecomesVisible')
+data.setCell(2, 2, 'com.solvd.demo.ui.tests.UITest')
+data.setCell(2, 3, 21190);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testFormButtonDisabledThenEnabled')
+data.setCell(3, 2, 'com.solvd.demo.ui.tests.UITest')
+data.setCell(3, 3, 21119);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testGemMenuActiveAfterClicking')
+data.setCell(4, 2, 'com.solvd.demo.ui.tests.UITest')
+data.setCell(4, 3, 20842);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testGemMenuActiveBeforeClicking')
+data.setCell(5, 2, 'com.solvd.demo.ui.tests.UITest')
+data.setCell(5, 3, 20801);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testAvatarVisibilityBeforeHideMenu')
+data.setCell(6, 2, 'com.solvd.demo.ui.tests.UITest')
+data.setCell(6, 3, 614);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testKnowMoreButtonClickNavigatesToInner')
+data.setCell(7, 2, 'com.solvd.demo.ui.tests.UITest')
+data.setCell(7, 3, 405);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testHomePageLoading')
+data.setCell(8, 2, 'com.solvd.demo.ui.tests.UITest')
+data.setCell(8, 3, 289);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'sanity')
+data.setCell(9, 2, 'com.solvd.demo.ui.tests.UITest')
+data.setCell(9, 3, 36);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -171,6 +444,329 @@ return data;
             <span class="header-content">Reporter output for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testFormButtonDisabledThenEnabled</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TEST [Surefire test - testFormButtonDisabledThenEnabled] FAILED at [06:27:55 2025-10-21] - no such element By.xpath: //button[class='form-btn']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: driver.version: unknown
+
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getAttribute(ExtendedWebElement.java:609)
+com.solvd.demo.ui.pages.ElementsPage.isFormButtonDisabled(ElementsPage.java:87)
+com.solvd.demo.ui.tests.UITest.testFormButtonDisabledThenEnabled(UITest.java:84)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testAvatarVisibilityAfterHideMenu</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TEST [Surefire test - testAvatarVisibilityAfterHideMenu] FAILED at [06:27:33 2025-10-21] - no such element By.xpath: //button[class='hide-btn']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: driver.version: unknown
+
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1407)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:708)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:688)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:670)
+com.solvd.demo.ui.pages.ElementsPage.clickHideMenu(ElementsPage.java:70)
+com.solvd.demo.ui.tests.UITest.testAvatarVisibilityAfterHideMenu(UITest.java:52)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testAvatarVisibilityBeforeHideMenu</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TEST [Surefire test - testAvatarVisibilityBeforeHideMenu] FAILED at [06:27:34 2025-10-21] - stale element reference
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: driver.version: unknown
+
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.isDisplayed(ExtendedWebElement.java:640)
+com.solvd.demo.ui.pages.ElementsPage.isAvatarVisible(ElementsPage.java:74)
+com.solvd.demo.ui.tests.UITest.testAvatarVisibilityBeforeHideMenu(UITest.java:41)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testScrollButtonScrollsUp</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TEST [Surefire test - testScrollButtonScrollsUp] FAILED at [06:29:21 2025-10-21] - Scroll button should be visible before clicking! expected [true] but found [false]
+
+org.testng.Assert.fail(Assert.java:111)
+org.testng.Assert.failNotEquals(Assert.java:1578)
+org.testng.Assert.assertTrue(Assert.java:57)
+com.solvd.demo.ui.tests.UITest.testScrollButtonScrollsUp(UITest.java:113)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testScrollButtonBecomesVisible</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TEST [Surefire test - testScrollButtonBecomesVisible] FAILED at [06:29:00 2025-10-21] - Scroll button should be visible after scrolling down! expected [true] but found [false]
+
+org.testng.Assert.fail(Assert.java:111)
+org.testng.Assert.failNotEquals(Assert.java:1578)
+org.testng.Assert.assertTrue(Assert.java:57)
+com.solvd.demo.ui.tests.UITest.testScrollButtonBecomesVisible(UITest.java:103)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testGemMenuActiveAfterClicking</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TEST [Surefire test - testGemMenuActiveAfterClicking] FAILED at [06:28:17 2025-10-21] - no such element By.xpath: //li[data-icon='gem']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: driver.version: unknown
+
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1407)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:708)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:688)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:670)
+com.solvd.demo.ui.pages.ElementsPage.clickGemMenu(ElementsPage.java:53)
+com.solvd.demo.ui.tests.UITest.testGemMenuActiveAfterClicking(UITest.java:73)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testGemMenuActiveBeforeClicking</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TEST [Surefire test - testGemMenuActiveBeforeClicking] FAILED at [06:28:38 2025-10-21] - no such element By.xpath: //li[data-icon='gem']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: driver.version: unknown
+
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getAttribute(ExtendedWebElement.java:609)
+com.solvd.demo.ui.pages.ElementsPage.getGemMenuClass(ElementsPage.java:48)
+com.solvd.demo.ui.tests.UITest.testGemMenuActiveBeforeClicking(UITest.java:63)
+java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+java.base/java.lang.reflect.Method.invoke(Method.java:580)
+org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+org.testng.TestRunner.privateRun(TestRunner.java:848)
+org.testng.TestRunner.run(TestRunner.java:621)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+org.testng.SuiteRunner.run(SuiteRunner.java:336)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+org.testng.TestNG.runSuites(TestNG.java:1114)
+org.testng.TestNG.run(TestNG.java:1082)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
@@ -185,6 +781,110 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.solvd.demo.ui.tests.UITest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupDriver</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">sanity</span>
+                <span class="method-start">4903 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">5002 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAvatarVisibilityAfterHideMenu</span>
+                <span class="method-start">5008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">27880 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAvatarVisibilityBeforeHideMenu</span>
+                <span class="method-start">27882 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">28884 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFormButtonDisabledThenEnabled</span>
+                <span class="method-start">28886 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">50349 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGemMenuActiveAfterClicking</span>
+                <span class="method-start">50351 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">71496 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGemMenuActiveBeforeClicking</span>
+                <span class="method-start">71498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">92598 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testHomePageLoading</span>
+                <span class="method-start">92599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">92893 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testKnowMoreButtonClickNavigatesToInner</span>
+                <span class="method-start">92894 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">93305 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScrollButtonBecomesVisible</span>
+                <span class="method-start">93306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">114784 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testScrollButtonScrollsUp</span>
+                <span class="method-start">114786 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">onCarinaAfterMethod</span>
+                <span class="method-start">136245 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
