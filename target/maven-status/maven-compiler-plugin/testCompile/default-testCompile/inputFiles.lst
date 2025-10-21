@@ -1,2 +1,6 @@
-C:\Users\annar\source\Solvd\AutoTests\src\test\java\com\solvd\demo\HttpBinImperativeTests.java
-C:\Users\annar\source\Solvd\AutoTests\src\test\java\com\solvd\demo\HttpBinDeclarativeTests.java
+C:\Users\annar\source\Solvd\AutoTests\src\test\java\com\solvd\demo\ui\pages\HomePage.java
+C:\Users\annar\source\Solvd\AutoTests\src\test\java\com\solvd\demo\ui\tests\BaseTest.java
+C:\Users\annar\source\Solvd\AutoTests\src\test\java\com\solvd\demo\api\HttpBinDeclarativeTests.java
+C:\Users\annar\source\Solvd\AutoTests\src\test\java\com\solvd\demo\ui\tests\UITest.java
+C:\Users\annar\source\Solvd\AutoTests\src\test\java\com\solvd\demo\api\HttpBinImperativeTests.java
+C:\Users\annar\source\Solvd\AutoTests\src\test\java\com\solvd\demo\ui\pages\ElementsPage.java
