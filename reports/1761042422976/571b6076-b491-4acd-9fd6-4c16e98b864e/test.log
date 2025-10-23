@@ -1,5 +1,0 @@
-[2025-10-21 10:28:38] [1] [WARN] Reporting disabled: using no op test run registrar
-[2025-10-21 10:28:38] [1] [INFO] TEST [Surefire test - testKnowMoreButtonClickNavigatesToInner] STARTED at [06:28:38 2025-10-21]
-[2025-10-21 10:28:38] [1] [INFO] INFO: opening url 'https://anna-rybakova.42web.io'
-[2025-10-21 10:28:38] [1] [INFO] Element 'knowMoreButton' is clicked.
-[2025-10-21 10:28:38] [1] [INFO] TEST [Surefire test - testKnowMoreButtonClickNavigatesToInner] PASSED at [06:28:38 2025-10-21]

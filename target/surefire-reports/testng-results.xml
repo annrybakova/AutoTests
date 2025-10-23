@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="3" failed="7" skipped="0">
+<testng-results ignored="0" total="14" passed="10" failed="4" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[TEST [Surefire test - testAvatarVisibilityAfterHideMenu] FAILED at [06:27:33 2025-10-21] - no such element By.xpath: //button[class='hide-btn']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
+      <![CDATA[TEST [UI Tests - testAddSkill_WaitsBadgeVisible] FAILED at [09:33:13 2025-10-23] - null
 
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1407)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:708)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:688)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:670)
-com.solvd.demo.ui.pages.ElementsPage.clickHideMenu(ElementsPage.java:70)
-com.solvd.demo.ui.tests.UITest.testAvatarVisibilityAfterHideMenu(UITest.java:52)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.clear(ExtendedWebElement.java:663)
+com.solvd.demo.ui.pages.ElementsPage.fillSkillsForm(ElementsPage.java:98)
+com.solvd.demo.ui.tests.UITest.testAddSkill_WaitsBadgeVisible(UITest.java:187)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -39,25 +30,20 @@ org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 org.testng.TestNG.runSuites(TestNG.java:1114)
 org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
     </line>
     <line>
-      <![CDATA[TEST [Surefire test - testAvatarVisibilityBeforeHideMenu] FAILED at [06:27:34 2025-10-21] - stale element reference
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
+      <![CDATA[TEST [UI Tests - testFormButtonDisabledThenEnabled] FAILED at [09:33:39 2025-10-23] - null
 
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.isDisplayed(ExtendedWebElement.java:640)
-com.solvd.demo.ui.pages.ElementsPage.isAvatarVisible(ElementsPage.java:74)
-com.solvd.demo.ui.tests.UITest.testAvatarVisibilityBeforeHideMenu(UITest.java:41)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.clear(ExtendedWebElement.java:663)
+com.solvd.demo.ui.pages.ElementsPage.fillSkillsForm(ElementsPage.java:98)
+com.solvd.demo.ui.tests.UITest.testFormButtonDisabledThenEnabled(UITest.java:101)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -81,157 +67,21 @@ org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 org.testng.TestNG.runSuites(TestNG.java:1114)
 org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
     </line>
     <line>
-      <![CDATA[TEST [Surefire test - testFormButtonDisabledThenEnabled] FAILED at [06:27:55 2025-10-21] - no such element By.xpath: //button[class='form-btn']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
-
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getAttribute(ExtendedWebElement.java:609)
-com.solvd.demo.ui.pages.ElementsPage.isFormButtonDisabled(ElementsPage.java:87)
-com.solvd.demo.ui.tests.UITest.testFormButtonDisabledThenEnabled(UITest.java:84)
-java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-java.base/java.lang.reflect.Method.invoke(Method.java:580)
-org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-org.testng.TestRunner.privateRun(TestRunner.java:848)
-org.testng.TestRunner.run(TestRunner.java:621)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-org.testng.SuiteRunner.run(SuiteRunner.java:336)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-org.testng.TestNG.runSuites(TestNG.java:1114)
-org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
-    </line>
-    <line>
-      <![CDATA[TEST [Surefire test - testGemMenuActiveAfterClicking] FAILED at [06:28:17 2025-10-21] - no such element By.xpath: //li[data-icon='gem']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
-
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1407)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:708)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:688)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:670)
-com.solvd.demo.ui.pages.ElementsPage.clickGemMenu(ElementsPage.java:53)
-com.solvd.demo.ui.tests.UITest.testGemMenuActiveAfterClicking(UITest.java:73)
-java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-java.base/java.lang.reflect.Method.invoke(Method.java:580)
-org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-org.testng.TestRunner.privateRun(TestRunner.java:848)
-org.testng.TestRunner.run(TestRunner.java:621)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-org.testng.SuiteRunner.run(SuiteRunner.java:336)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-org.testng.TestNG.runSuites(TestNG.java:1114)
-org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
-    </line>
-    <line>
-      <![CDATA[TEST [Surefire test - testGemMenuActiveBeforeClicking] FAILED at [06:28:38 2025-10-21] - no such element By.xpath: //li[data-icon='gem']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
-
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getAttribute(ExtendedWebElement.java:609)
-com.solvd.demo.ui.pages.ElementsPage.getGemMenuClass(ElementsPage.java:48)
-com.solvd.demo.ui.tests.UITest.testGemMenuActiveBeforeClicking(UITest.java:63)
-java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-java.base/java.lang.reflect.Method.invoke(Method.java:580)
-org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-org.testng.TestRunner.privateRun(TestRunner.java:848)
-org.testng.TestRunner.run(TestRunner.java:621)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-org.testng.SuiteRunner.run(SuiteRunner.java:336)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-org.testng.TestNG.runSuites(TestNG.java:1114)
-org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
-    </line>
-    <line>
-      <![CDATA[TEST [Surefire test - testScrollButtonBecomesVisible] FAILED at [06:29:00 2025-10-21] - Scroll button should be visible after scrolling down! expected [true] but found [false]
+      <![CDATA[TEST [UI Tests - testGemMenuActiveAfterClicking] FAILED at [09:33:41 2025-10-23] - Gem menu should have 'active' class after clicking! expected [true] but found [false]
 
 org.testng.Assert.fail(Assert.java:111)
 org.testng.Assert.failNotEquals(Assert.java:1578)
 org.testng.Assert.assertTrue(Assert.java:57)
-com.solvd.demo.ui.tests.UITest.testScrollButtonBecomesVisible(UITest.java:103)
+com.solvd.demo.ui.tests.UITest.testGemMenuActiveAfterClicking(UITest.java:79)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -255,22 +105,21 @@ org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 org.testng.TestNG.runSuites(TestNG.java:1114)
 org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
     </line>
     <line>
-      <![CDATA[TEST [Surefire test - testScrollButtonScrollsUp] FAILED at [06:29:21 2025-10-21] - Scroll button should be visible before clicking! expected [true] but found [false]
+      <![CDATA[TEST [UI Tests - testGemMenuActiveAfterClickingWithWait] FAILED at [09:33:43 2025-10-23] - Gem nav item should become active after click expected [true] but found [false]
 
 org.testng.Assert.fail(Assert.java:111)
 org.testng.Assert.failNotEquals(Assert.java:1578)
 org.testng.Assert.assertTrue(Assert.java:57)
-com.solvd.demo.ui.tests.UITest.testScrollButtonScrollsUp(UITest.java:113)
+com.solvd.demo.ui.tests.UITest.testGemMenuActiveAfterClickingWithWait(UITest.java:164)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -294,60 +143,37 @@ org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 org.testng.TestNG.runSuites(TestNG.java:1114)
 org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-10-21T06:27:05 EDT" name="Surefire suite" finished-at="2025-10-21T06:29:21 EDT" duration-ms="136232">
+  <suite started-at="2025-10-23T09:33:08 EDT" name="UI Suite" finished-at="2025-10-23T09:33:51 EDT" duration-ms="42964">
     <groups>
     </groups>
-    <test started-at="2025-10-21T06:27:05 EDT" name="Surefire test" finished-at="2025-10-21T06:29:21 EDT" duration-ms="136232">
-      <class name="com.solvd.demo.ui.tests.UITest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:27:05 EDT" name="setup" finished-at="2025-10-21T06:27:05 EDT" duration-ms="15" status="PASS">
+    <test started-at="2025-10-23T09:33:08 EDT" name="UI Tests" finished-at="2025-10-23T09:33:51 EDT" duration-ms="42964">
+      <class name="com.solvd.demo.ui.tests.BaseTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.solvd.demo.ui.tests.BaseTest@18811c42]" started-at="2025-10-23T09:33:08 EDT" name="setup" finished-at="2025-10-23T09:33:08 EDT" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:27:05 EDT" name="setupDriver" finished-at="2025-10-21T06:27:10 EDT" duration-ms="4850" status="PASS">
+      </class> <!-- com.solvd.demo.ui.tests.BaseTest -->
+      <class name="com.solvd.demo.ui.tests.UITest">
+        <test-method is-config="true" signature="setupDriver()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:08 EDT" name="setupDriver" finished-at="2025-10-23T09:33:10 EDT" duration-ms="2169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="sanity()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:27:10 EDT" name="sanity" finished-at="2025-10-21T06:27:10 EDT" duration-ms="36" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sanity -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:27:10 EDT" name="onCarinaAfterMethod" finished-at="2025-10-21T06:27:10 EDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- onCarinaAfterMethod -->
-        <test-method signature="testAvatarVisibilityAfterHideMenu()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:27:10 EDT" name="testAvatarVisibilityAfterHideMenu" finished-at="2025-10-21T06:27:32 EDT" duration-ms="22273" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element By.xpath: //button[class='hide-btn']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown]]>
-            </message>
+        <test-method signature="testAddSkill_WaitsBadgeVisible()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:10 EDT" name="testAddSkill_WaitsBadgeVisible" finished-at="2025-10-23T09:33:12 EDT" duration-ms="2371" status="FAIL">
+          <exception class="org.apache.commons.lang3.NotImplementedException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element By.xpath: //button[class='hide-btn']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1407)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:708)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:688)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:670)
-at com.solvd.demo.ui.pages.ElementsPage.clickHideMenu(ElementsPage.java:70)
-at com.solvd.demo.ui.tests.UITest.testAvatarVisibilityAfterHideMenu(UITest.java:52)
+              <![CDATA[org.apache.commons.lang3.NotImplementedException
+at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.clear(ExtendedWebElement.java:663)
+at com.solvd.demo.ui.pages.ElementsPage.fillSkillsForm(ElementsPage.java:98)
+at com.solvd.demo.ui.tests.UITest.testAddSkill_WaitsBadgeVisible(UITest.java:187)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -371,33 +197,23 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 at org.testng.TestNG.runSuites(TestNG.java:1114)
 at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.apache.commons.lang3.NotImplementedException -->
           <reporter-output>
             <line>
-              <![CDATA[TEST [Surefire test - testAvatarVisibilityAfterHideMenu] FAILED at [06:27:33 2025-10-21] - no such element By.xpath: //button[class='hide-btn']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
+              <![CDATA[TEST [UI Tests - testAddSkill_WaitsBadgeVisible] FAILED at [09:33:13 2025-10-23] - null
 
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1407)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:708)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:688)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:670)
-com.solvd.demo.ui.pages.ElementsPage.clickHideMenu(ElementsPage.java:70)
-com.solvd.demo.ui.tests.UITest.testAvatarVisibilityAfterHideMenu(UITest.java:52)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.clear(ExtendedWebElement.java:663)
+com.solvd.demo.ui.pages.ElementsPage.fillSkillsForm(ElementsPage.java:98)
+com.solvd.demo.ui.tests.UITest.testAddSkill_WaitsBadgeVisible(UITest.java:187)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -421,142 +237,43 @@ org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 org.testng.TestNG.runSuites(TestNG.java:1114)
 org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- testAddSkill_WaitsBadgeVisible -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:13 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:13 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+        <test-method signature="testAvatarVisibilityAfterHideMenu()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:13 EDT" name="testAvatarVisibilityAfterHideMenu" finished-at="2025-10-23T09:33:35 EDT" duration-ms="21759" status="PASS">
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- testAvatarVisibilityAfterHideMenu -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:27:33 EDT" name="onCarinaAfterMethod" finished-at="2025-10-21T06:27:33 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:35 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:35 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-        <test-method signature="testAvatarVisibilityBeforeHideMenu()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:27:33 EDT" name="testAvatarVisibilityBeforeHideMenu" finished-at="2025-10-21T06:27:34 EDT" duration-ms="614" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
-            <message>
-              <![CDATA[stale element reference
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.isDisplayed(ExtendedWebElement.java:640)
-at com.solvd.demo.ui.pages.ElementsPage.isAvatarVisible(ElementsPage.java:74)
-at com.solvd.demo.ui.tests.UITest.testAvatarVisibilityBeforeHideMenu(UITest.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+        <test-method signature="testAvatarVisibilityBeforeHideMenu()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:35 EDT" name="testAvatarVisibilityBeforeHideMenu" finished-at="2025-10-23T09:33:36 EDT" duration-ms="862" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[TEST [Surefire test - testAvatarVisibilityBeforeHideMenu] FAILED at [06:27:34 2025-10-21] - stale element reference
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
-
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.isDisplayed(ExtendedWebElement.java:640)
-com.solvd.demo.ui.pages.ElementsPage.isAvatarVisible(ElementsPage.java:74)
-com.solvd.demo.ui.tests.UITest.testAvatarVisibilityBeforeHideMenu(UITest.java:41)
-java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-java.base/java.lang.reflect.Method.invoke(Method.java:580)
-org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-org.testng.TestRunner.privateRun(TestRunner.java:848)
-org.testng.TestRunner.run(TestRunner.java:621)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-org.testng.SuiteRunner.run(SuiteRunner.java:336)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-org.testng.TestNG.runSuites(TestNG.java:1114)
-org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testAvatarVisibilityBeforeHideMenu -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:27:34 EDT" name="onCarinaAfterMethod" finished-at="2025-10-21T06:27:34 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:36 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:36 EDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-        <test-method signature="testFormButtonDisabledThenEnabled()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:27:34 EDT" name="testFormButtonDisabledThenEnabled" finished-at="2025-10-21T06:27:55 EDT" duration-ms="21119" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element By.xpath: //button[class='form-btn']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown]]>
-            </message>
+        <test-method signature="testFormButtonDisabledThenEnabled()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:36 EDT" name="testFormButtonDisabledThenEnabled" finished-at="2025-10-23T09:33:38 EDT" duration-ms="2038" status="FAIL">
+          <exception class="org.apache.commons.lang3.NotImplementedException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element By.xpath: //button[class='form-btn']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getAttribute(ExtendedWebElement.java:609)
-at com.solvd.demo.ui.pages.ElementsPage.isFormButtonDisabled(ElementsPage.java:87)
-at com.solvd.demo.ui.tests.UITest.testFormButtonDisabledThenEnabled(UITest.java:84)
+              <![CDATA[org.apache.commons.lang3.NotImplementedException
+at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.clear(ExtendedWebElement.java:663)
+at com.solvd.demo.ui.pages.ElementsPage.fillSkillsForm(ElementsPage.java:98)
+at com.solvd.demo.ui.tests.UITest.testFormButtonDisabledThenEnabled(UITest.java:101)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -580,30 +297,23 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 at org.testng.TestNG.runSuites(TestNG.java:1114)
 at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.apache.commons.lang3.NotImplementedException -->
           <reporter-output>
             <line>
-              <![CDATA[TEST [Surefire test - testFormButtonDisabledThenEnabled] FAILED at [06:27:55 2025-10-21] - no such element By.xpath: //button[class='form-btn']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
+              <![CDATA[TEST [UI Tests - testFormButtonDisabledThenEnabled] FAILED at [09:33:39 2025-10-23] - null
 
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getAttribute(ExtendedWebElement.java:609)
-com.solvd.demo.ui.pages.ElementsPage.isFormButtonDisabled(ElementsPage.java:87)
-com.solvd.demo.ui.tests.UITest.testFormButtonDisabledThenEnabled(UITest.java:84)
+com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.clear(ExtendedWebElement.java:663)
+com.solvd.demo.ui.pages.ElementsPage.fillSkillsForm(ElementsPage.java:98)
+com.solvd.demo.ui.tests.UITest.testFormButtonDisabledThenEnabled(UITest.java:101)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -627,10 +337,9 @@ org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 org.testng.TestNG.runSuites(TestNG.java:1114)
 org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
@@ -638,33 +347,21 @@ org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
             </line>
           </reporter-output>
         </test-method> <!-- testFormButtonDisabledThenEnabled -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:27:55 EDT" name="onCarinaAfterMethod" finished-at="2025-10-21T06:27:55 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:39 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:39 EDT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-        <test-method signature="testGemMenuActiveAfterClicking()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:27:55 EDT" name="testGemMenuActiveAfterClicking" finished-at="2025-10-21T06:28:16 EDT" duration-ms="20842" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="testGemMenuActiveAfterClicking()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:39 EDT" name="testGemMenuActiveAfterClicking" finished-at="2025-10-23T09:33:40 EDT" duration-ms="1639" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element By.xpath: //li[data-icon='gem']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown]]>
+              <![CDATA[Gem menu should have 'active' class after clicking! expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element By.xpath: //li[data-icon='gem']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1407)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:708)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:688)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:670)
-at com.solvd.demo.ui.pages.ElementsPage.clickGemMenu(ElementsPage.java:53)
-at com.solvd.demo.ui.tests.UITest.testGemMenuActiveAfterClicking(UITest.java:73)
+              <![CDATA[java.lang.AssertionError: Gem menu should have 'active' class after clicking! expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.solvd.demo.ui.tests.UITest.testGemMenuActiveAfterClicking(UITest.java:79)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -688,33 +385,24 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 at org.testng.TestNG.runSuites(TestNG.java:1114)
 at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[TEST [Surefire test - testGemMenuActiveAfterClicking] FAILED at [06:28:17 2025-10-21] - no such element By.xpath: //li[data-icon='gem']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
+              <![CDATA[TEST [UI Tests - testGemMenuActiveAfterClicking] FAILED at [09:33:41 2025-10-23] - Gem menu should have 'active' class after clicking! expected [true] but found [false]
 
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1407)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:708)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:688)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.click(ExtendedWebElement.java:670)
-com.solvd.demo.ui.pages.ElementsPage.clickGemMenu(ElementsPage.java:53)
-com.solvd.demo.ui.tests.UITest.testGemMenuActiveAfterClicking(UITest.java:73)
+org.testng.Assert.fail(Assert.java:111)
+org.testng.Assert.failNotEquals(Assert.java:1578)
+org.testng.Assert.assertTrue(Assert.java:57)
+com.solvd.demo.ui.tests.UITest.testGemMenuActiveAfterClicking(UITest.java:79)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -738,10 +426,9 @@ org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 org.testng.TestNG.runSuites(TestNG.java:1114)
 org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
@@ -749,30 +436,21 @@ org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
             </line>
           </reporter-output>
         </test-method> <!-- testGemMenuActiveAfterClicking -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:28:17 EDT" name="onCarinaAfterMethod" finished-at="2025-10-21T06:28:17 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:41 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:41 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-        <test-method signature="testGemMenuActiveBeforeClicking()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:28:17 EDT" name="testGemMenuActiveBeforeClicking" finished-at="2025-10-21T06:28:37 EDT" duration-ms="20801" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="testGemMenuActiveAfterClickingWithWait()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:41 EDT" name="testGemMenuActiveAfterClickingWithWait" finished-at="2025-10-23T09:33:42 EDT" duration-ms="1386" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element By.xpath: //li[data-icon='gem']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown]]>
+              <![CDATA[Gem nav item should become active after click expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element By.xpath: //li[data-icon='gem']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-at com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getAttribute(ExtendedWebElement.java:609)
-at com.solvd.demo.ui.pages.ElementsPage.getGemMenuClass(ElementsPage.java:48)
-at com.solvd.demo.ui.tests.UITest.testGemMenuActiveBeforeClicking(UITest.java:63)
+              <![CDATA[java.lang.AssertionError: Gem nav item should become active after click expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.solvd.demo.ui.tests.UITest.testGemMenuActiveAfterClickingWithWait(UITest.java:164)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -796,30 +474,24 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 at org.testng.TestNG.runSuites(TestNG.java:1114)
 at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[TEST [Surefire test - testGemMenuActiveBeforeClicking] FAILED at [06:28:38 2025-10-21] - no such element By.xpath: //li[data-icon='gem']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
-Driver info: driver.version: unknown
+              <![CDATA[TEST [UI Tests - testGemMenuActiveAfterClickingWithWait] FAILED at [09:33:43 2025-10-23] - Gem nav item should become active after click expected [true] but found [false]
 
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.findElement(ExtendedWebElement.java:1774)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.doAction(ExtendedWebElement.java:1430)
-com.zebrunner.carina.webdriver.decorator.ExtendedWebElement.getAttribute(ExtendedWebElement.java:609)
-com.solvd.demo.ui.pages.ElementsPage.getGemMenuClass(ElementsPage.java:48)
-com.solvd.demo.ui.tests.UITest.testGemMenuActiveBeforeClicking(UITest.java:63)
+org.testng.Assert.fail(Assert.java:111)
+org.testng.Assert.failNotEquals(Assert.java:1578)
+org.testng.Assert.assertTrue(Assert.java:57)
+com.solvd.demo.ui.tests.UITest.testGemMenuActiveAfterClickingWithWait(UITest.java:164)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -843,220 +515,85 @@ org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
 org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 org.testng.TestNG.runSuites(TestNG.java:1114)
 org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testGemMenuActiveBeforeClicking -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:28:38 EDT" name="onCarinaAfterMethod" finished-at="2025-10-21T06:28:38 EDT" duration-ms="0" status="PASS">
+        </test-method> <!-- testGemMenuActiveAfterClickingWithWait -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:43 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:43 EDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-        <test-method signature="testHomePageLoading()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:28:38 EDT" name="testHomePageLoading" finished-at="2025-10-21T06:28:38 EDT" duration-ms="289" status="PASS">
+        <test-method signature="testGemMenuActiveBeforeClicking()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:43 EDT" name="testGemMenuActiveBeforeClicking" finished-at="2025-10-23T09:33:44 EDT" duration-ms="931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGemMenuActiveBeforeClicking -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:44 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:44 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+        <test-method signature="testHideMenu_WaitsAvatarDisappear()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:44 EDT" name="testHideMenu_WaitsAvatarDisappear" finished-at="2025-10-23T09:33:45 EDT" duration-ms="927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHideMenu_WaitsAvatarDisappear -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:45 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:45 EDT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+        <test-method signature="testHomePageLoading()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:45 EDT" name="testHomePageLoading" finished-at="2025-10-23T09:33:45 EDT" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageLoading -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:28:38 EDT" name="onCarinaAfterMethod" finished-at="2025-10-21T06:28:38 EDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:45 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:45 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-        <test-method signature="testKnowMoreButtonClickNavigatesToInner()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:28:38 EDT" name="testKnowMoreButtonClickNavigatesToInner" finished-at="2025-10-21T06:28:38 EDT" duration-ms="405" status="PASS">
+        <test-method signature="testKnowMoreButtonClickNavigatesToInner()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:45 EDT" name="testKnowMoreButtonClickNavigatesToInner" finished-at="2025-10-23T09:33:46 EDT" duration-ms="546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testKnowMoreButtonClickNavigatesToInner -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:28:38 EDT" name="onCarinaAfterMethod" finished-at="2025-10-21T06:28:38 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:46 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:46 EDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-        <test-method signature="testScrollButtonBecomesVisible()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:28:38 EDT" name="testScrollButtonBecomesVisible" finished-at="2025-10-21T06:29:00 EDT" duration-ms="21190" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Scroll button should be visible after scrolling down! expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Scroll button should be visible after scrolling down! expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.solvd.demo.ui.tests.UITest.testScrollButtonBecomesVisible(UITest.java:103)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testKnowMore_WaitsForInnerUrl()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:46 EDT" name="testKnowMore_WaitsForInnerUrl" finished-at="2025-10-23T09:33:47 EDT" duration-ms="659" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[TEST [Surefire test - testScrollButtonBecomesVisible] FAILED at [06:29:00 2025-10-21] - Scroll button should be visible after scrolling down! expected [true] but found [false]
-
-org.testng.Assert.fail(Assert.java:111)
-org.testng.Assert.failNotEquals(Assert.java:1578)
-org.testng.Assert.assertTrue(Assert.java:57)
-com.solvd.demo.ui.tests.UITest.testScrollButtonBecomesVisible(UITest.java:103)
-java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-java.base/java.lang.reflect.Method.invoke(Method.java:580)
-org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-org.testng.TestRunner.privateRun(TestRunner.java:848)
-org.testng.TestRunner.run(TestRunner.java:621)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-org.testng.SuiteRunner.run(SuiteRunner.java:336)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-org.testng.TestNG.runSuites(TestNG.java:1114)
-org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
-            </line>
+          </reporter-output>
+        </test-method> <!-- testKnowMore_WaitsForInnerUrl -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:47 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:47 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+        <test-method signature="testScrollButtonBecomesVisible()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:47 EDT" name="testScrollButtonBecomesVisible" finished-at="2025-10-23T09:33:48 EDT" duration-ms="980" status="PASS">
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- testScrollButtonBecomesVisible -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:29:00 EDT" name="onCarinaAfterMethod" finished-at="2025-10-21T06:29:00 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:48 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:48 EDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
-        <test-method signature="testScrollButtonScrollsUp()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:29:00 EDT" name="testScrollButtonScrollsUp" finished-at="2025-10-21T06:29:21 EDT" duration-ms="21214" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Scroll button should be visible before clicking! expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Scroll button should be visible before clicking! expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.solvd.demo.ui.tests.UITest.testScrollButtonScrollsUp(UITest.java:113)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testScrollButtonScrollsUp()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:48 EDT" name="testScrollButtonScrollsUp" finished-at="2025-10-23T09:33:50 EDT" duration-ms="2101" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[TEST [Surefire test - testScrollButtonScrollsUp] FAILED at [06:29:21 2025-10-21] - Scroll button should be visible before clicking! expected [true] but found [false]
-
-org.testng.Assert.fail(Assert.java:111)
-org.testng.Assert.failNotEquals(Assert.java:1578)
-org.testng.Assert.assertTrue(Assert.java:57)
-com.solvd.demo.ui.tests.UITest.testScrollButtonScrollsUp(UITest.java:113)
-java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-java.base/java.lang.reflect.Method.invoke(Method.java:580)
-org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-org.testng.TestRunner.privateRun(TestRunner.java:848)
-org.testng.TestRunner.run(TestRunner.java:621)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-org.testng.SuiteRunner.run(SuiteRunner.java:336)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-org.testng.TestNG.runSuites(TestNG.java:1114)
-org.testng.TestNG.run(TestNG.java:1082)
-org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testScrollButtonScrollsUp -->
-        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@1c011855]" started-at="2025-10-21T06:29:21 EDT" name="onCarinaAfterMethod" finished-at="2025-10-21T06:29:21 EDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:50 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:50 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onCarinaAfterMethod -->
+        <test-method signature="testScrollUpButton_WaitsScrollTop()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:50 EDT" name="testScrollUpButton_WaitsScrollTop" finished-at="2025-10-23T09:33:51 EDT" duration-ms="1096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScrollUpButton_WaitsScrollTop -->
+        <test-method is-config="true" signature="onCarinaAfterMethod()[pri:0, instance:com.solvd.demo.ui.tests.UITest@20a9f5fb]" started-at="2025-10-23T09:33:51 EDT" name="onCarinaAfterMethod" finished-at="2025-10-23T09:33:51 EDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onCarinaAfterMethod -->
       </class> <!-- com.solvd.demo.ui.tests.UITest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- UI Tests -->
+  </suite> <!-- UI Suite -->
 </testng-results>

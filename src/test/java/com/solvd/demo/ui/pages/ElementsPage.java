@@ -1,25 +1,33 @@
 package com.solvd.demo.ui.pages;
 
+import com.solvd.demo.ui.components.NavItem;
+import com.solvd.demo.ui.components.SkillBadge;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class ElementsPage extends AbstractPage {
 
-    @FindBy(xpath = "//button[class='hide-btn']")
+    @FindBy(xpath = "//button[@class='hide-btn']")
     private ExtendedWebElement hideMenu;
 
-    @FindBy(xpath = "//img[class='avatar']")
-    private ExtendedWebElement checkAvatar;
+    @FindBy(xpath = "//li[text()='Skills']")
+    private NavItem gemNavItem;
 
-    @FindBy(xpath = "//li[data-icon='gem']")
-    private ExtendedWebElement gemMenu;
-
-    @FindBy(xpath = "//button[class='skills-btn']")
+    @FindBy(xpath = "//button[contains(@class,'skills-btn')]")
     private ExtendedWebElement skillsButton;
+
+    @FindBy(xpath = "//button[@class='inner-btn']")
+    private ExtendedWebElement innerButton;
+
+    @FindBy(xpath = "//button[@class='scroll-btn']")
+    private ExtendedWebElement scrollButton;
 
     @FindBy(xpath = "//input[@id='skillName']")
     private ExtendedWebElement skillNameInput;
@@ -27,42 +35,40 @@ public class ElementsPage extends AbstractPage {
     @FindBy(xpath = "//input[@id='skillRange']")
     private ExtendedWebElement skillRangeInput;
 
-    @FindBy(xpath = "//button[class='form-btn']")
+    @FindBy(xpath = "//button[contains(@class,'form-button')]")
     private ExtendedWebElement formButton;
 
-    @FindBy(xpath = "//div[class='skill-type']")
-    private List<ExtendedWebElement> skillType;
+    @FindBy(xpath = "//img[@class='avatar']")
+    private ExtendedWebElement avatar;
 
-    @FindBy(xpath = "//button[class='inner-btn']")
-    private ExtendedWebElement innerButton;
-
-    @FindBy(xpath = "//button[class='scroll-btn']")
-    private ExtendedWebElement scrollButton;
-
+    @FindBy(xpath = "//div[@class='skill-type']")
+    private List<SkillBadge> skillBadges;
 
     public ElementsPage(WebDriver driver) {
         super(driver);
     }
 
-    public String getGemMenuClass() {
-        String cls = gemMenu.getAttribute("class");
-        return cls == null ? "" : cls;
+    public boolean isAvatarVisible() {
+        return avatar.isElementPresent() && avatar.isVisible();
     }
 
-    public void clickGemMenu() {
-        gemMenu.click();
-
+    public boolean waitAvatarVisible(int timeoutSec) {
         try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
+            new WebDriverWait(getDriver(), Duration.ofSeconds(timeoutSec))
+                    .until(ExpectedConditions.visibilityOf(avatar.getElement()));
+            return true;
+        } catch (Exception e) {
+            return false;
         }
+    }
 
-        String classAttribute = gemMenu.getAttribute("class");
-        if (classAttribute != null && classAttribute.contains("active")) {
-            System.out.println("Gem menu is active!");
-        } else {
-            System.out.println("Gem menu is not active.");
+    public boolean waitAvatarHidden(int timeoutSec) {
+        try {
+            new WebDriverWait(getDriver(), Duration.ofSeconds(timeoutSec))
+                    .until(ExpectedConditions.invisibilityOf(avatar.getElement()));
+            return true;
+        } catch (Exception e) {
+            return false;
         }
     }
 
@@ -70,12 +76,29 @@ public class ElementsPage extends AbstractPage {
         hideMenu.click();
     }
 
-   public boolean isAvatarVisible() {
-        return checkAvatar.isDisplayed();
+    public void clickSkillsButton() {
+        skillsButton.click();
+    }
+
+    public NavItem gem() {
+        return gemNavItem;
+    }
+
+    public String getGemMenuClass() {
+        gemNavItem.waitUntilPresent(10);
+        return gemNavItem.getRoot().getAttribute("class");
+    }
+
+    public void clickGemMenu() {
+        gemNavItem.waitUntilClickable(10);
+        gemNavItem.click();
     }
 
     public void fillSkillsForm(String skillName, String skillRange) {
+        skillNameInput.clear();
         skillNameInput.type(skillName);
+
+        skillRangeInput.clear();
         skillRangeInput.type(skillRange);
     }
 
@@ -84,17 +107,35 @@ public class ElementsPage extends AbstractPage {
     }
 
     public boolean isFormButtonDisabled() {
-        String disabled = formButton.getAttribute("disabled");
-        // Some UIs set disabled="true" or just presence of the attribute, and sometimes disable via class + isEnabled()
-        return (disabled != null && !disabled.isEmpty()) || !formButton.getElement().isEnabled();
+        String cls = formButton.getAttribute("class");
+        String disabledAttr = formButton.getAttribute("disabled");
+        boolean hasDisabledClass = cls != null && cls.contains("disabled");
+        boolean hasDisabledAttr = disabledAttr != null;
+        return hasDisabledClass || hasDisabledAttr;
+    }
+
+    public boolean isFormButtonEnabled() {
+        return !isFormButtonDisabled();
     }
 
     public String checkNewSkill() {
-        return skillType.toString();
+        if (skillBadges == null || skillBadges.isEmpty())
+            return "";
+        StringBuilder sb = new StringBuilder();
+        for (SkillBadge badge : skillBadges) {
+            if (sb.length() > 0)
+                sb.append(" | ");
+            sb.append(badge.text());
+        }
+        return sb.toString();
+    }
+
+    public List<SkillBadge> skills() {
+        return skillBadges;
     }
 
     public void clickInnerBtn() {
-        scrollButton.click();
+        innerButton.click();
     }
 
     public boolean isScrollButtonVisible() {
@@ -102,8 +143,6 @@ public class ElementsPage extends AbstractPage {
     }
 
     public void clickScrollBtn() {
-        innerButton.click();
+        scrollButton.click();
     }
-
 }
-

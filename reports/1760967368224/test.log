@@ -1,6 +1,0 @@
-[2025-10-20 01:36:08] [1] [ERROR] Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_141
-[2025-10-20 01:36:08] [1] [WARN] Exception reading https://chromedriver.storage.googleapis.com/LATEST_RELEASE_141 to get latest version of chromedriver (Error HTTP 404 executing https://chromedriver.storage.googleapis.com/LATEST_RELEASE_141)
-[2025-10-20 01:36:08] [1] [INFO] Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
-[2025-10-20 01:36:09] [1] [INFO] Downloading https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_win32.zip
-[2025-10-20 01:36:11] [1] [INFO] Extracting driver from compressed file chromedriver_win32.zip
-[2025-10-20 01:36:12] [1] [INFO] Exporting webdriver.chrome.driver as C:\Users\annar\.cache\selenium\chromedriver\win32\114.0.5735.90\chromedriver.exe

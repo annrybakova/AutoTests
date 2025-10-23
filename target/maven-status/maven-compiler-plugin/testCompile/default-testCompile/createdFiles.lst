@@ -2,5 +2,7 @@ com\solvd\demo\ui\tests\BaseTest.class
 com\solvd\demo\ui\tests\UITest.class
 test\java\com\solvd\demo\api\HttpBinDeclarativeTests.class
 com\solvd\demo\ui\pages\ElementsPage.class
+com\solvd\demo\ui\components\SkillBadge.class
+com\solvd\demo\ui\components\NavItem.class
 com\solvd\demo\ui\pages\HomePage.class
 test\java\com\solvd\demo\api\HttpBinImperativeTests.class
